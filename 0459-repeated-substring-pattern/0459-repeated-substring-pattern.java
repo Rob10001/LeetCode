@@ -1,7 +1,5 @@
 class Solution {
     public boolean repeatedSubstringPattern(String s) {
-        //  start at 0, check if that substring of length 1 works
-        //  still at 0, increase length until its half length of s, see if that works
         if(s.length() == 1) return false;
         
         boolean works = false;
