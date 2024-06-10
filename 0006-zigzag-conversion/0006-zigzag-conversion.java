@@ -16,13 +16,13 @@ class Solution {
             }
         }
         
-        String output = "";
+        StringBuilder output = new StringBuilder();
         for(int i = 0; i < grid.length; i++) {
             for(int j = 0; j < grid[i].size(); j++) {
-                output += grid[i].get(j);
+                output.append(grid[i].get(j));
             }
         }
         
-        return output;
+        return output.toString();
     }
 }
