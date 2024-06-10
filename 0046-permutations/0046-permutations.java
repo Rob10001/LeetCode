@@ -14,9 +14,9 @@ class Solution {
                 ArrayList<Integer> recurse = new ArrayList<Integer>(currStack);
                 recurse.add(nums[i]);
                 
-                boolean[] recurseUsed = Arrays.copyOf(used, used.length);
-                recurseUsed[i] = true;
-                combos(nums, recurseUsed, recurse);
+                used[i] = true;
+                combos(nums, used, recurse);
+                used[i] = false;
             }
         }
         
